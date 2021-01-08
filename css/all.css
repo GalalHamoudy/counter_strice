@@ -1,0 +1,670 @@
+body{font-family: 'Aladin', cursive;letter-spacing: 1px;overflow: hidden}
+#ascrail2000-hr{display: none !important ;}
+a {color: #ffffff;text-decoration: none;background-color: transparent;}
+
+/*==================================*/
+/* start loading================== */
+/*==================================*/
+.show-wow{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:99999;
+    align-items: center;
+	justify-content: center;
+	background-color: #343a40;
+}
+.loader {
+    width: 20em;
+    height: 20em;
+    font-size: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 217px;
+}
+.loader .face {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    animation: animate 3s linear infinite;
+}
+
+.loader .face:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    color: gold;
+    border-color: currentColor transparent transparent currentColor;
+    border-width: 0.2em 0.2em 0em 0em;
+    --deg: -45deg;
+    animation-direction: normal;
+}
+.loader .face:nth-child(2) {
+    width: 70%;
+    height: 70%;
+    color: lime;
+    border-color: currentColor currentColor transparent transparent;
+    border-width: 0.2em 0em 0em 0.2em;
+    --deg: -135deg;
+    animation-direction: reverse;
+}
+.loader .face .circle {
+    position: absolute;
+    width: 50%;
+    height: 0.1em;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    transform: rotate(var(--deg));
+    transform-origin: left;
+}
+.loader .face .circle::before {
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    border-radius: 50%;
+    box-shadow: 0 0 2em,
+                0 0 4em,
+                0 0 6em,
+                0 0 8em,
+                0 0 10em,
+                0 0 0 0.5em rgba(255, 255, 0, 0.1);
+}
+@keyframes animate {to {transform: rotate(1turn);}}
+
+
+
+/*==================================*/
+/* end loading====================== */
+/*==================================*/
+
+
+
+
+
+
+
+
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Main @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*===============================*/
+/* start Navbar =================*/
+/*===============================*/
+
+.bg-light {background-color: #1b1515!important;border-radius: 20px;}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link,.navbar-light .navbar-brand {color: rgba(255, 255, 255, 0.9);}
+.navbar-light .navbar-nav .nav-link {color: rgb(255, 253, 253);text-align: center;}
+.navbar-expand-lg .navbar-nav {margin: 0px auto;}
+.nav-link:hover,.active-link{
+    background-color: #343a40;
+    border-radius: 0px;
+    border-bottom: 4px solid #00050a;
+    transition: all .3s ease-in-out;
+    color: white !important;
+    border-radius: 14px 0px;
+}
+.bg-dark {background-color: #343a40c7!important;}
+.logo{width: 215px;height: 40px;}
+.navbar-nav li{ margin: 0px 10px;font-size: 20px;}
+#time{
+    color: #979ba0;
+    border: 3px solid;
+    padding: 6px;
+    border-radius: 20px;
+    border-color: #979ba0;
+    right: 81px;
+    position: fixed;
+}
+/*===============================*/
+/* start Navbar =================*/
+/*===============================*/
+
+/*==============================*/
+/* start Carousel============== */
+/*==============================*/
+
+
+.w-100 {
+    width: 100%!important;
+    height: 657px;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 42%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #313940a6;
+}
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    border-radius: 50%;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border: 2px solid #000;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    border: 9px solid #171c1f;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: #171c1f;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    transform: scale(1.1 ,1.1);
+    transition: all 1s ease-in-out;
+    box-shadow: 0px 0px 5px 5px #fff;
+}
+/*==============================*/
+/* end Carousel================ */
+/*==============================*/
+
+/*==============================*/
+/* start About================= */
+/*==============================*/
+
+
+.about{
+    color:#343a40;
+    font-size:25px;
+    margin: 36px 0px;
+}
+
+/*==============================*/
+/* end About=================== */
+/*==============================*/
+
+
+
+/*==============================*/
+/* start features============== */
+/*==============================*/
+
+.features {
+    background: url(../img/sections_background/dark.jpg) 50% 0 repeat fixed ;
+    background-size: cover;
+    padding: 20px 0px;
+}
+.features .feat{
+    margin-bottom: 30px;
+    background-color: #343a406e;
+    padding: 50px 20px;
+        color: white;
+}
+.features .feat:hover {
+    background-color: #343a40;
+    transition: all .4s ease-in-out;
+}
+.main-t{
+    background-color: black;
+    color: white;
+    border-left: 4px solid yellow;
+    border-right: 4px solid yellow;
+    margin: 30px;
+}
+
+.features .feat p {line-height:2em}
+.oo{font-size: 50px;margin-bottom: 30px;}
+.features .feat span.glyphicon {font-size:25px;margin-bottom:10px;color:#666}
+
+/*==============================*/
+/* end features================ */
+/*==============================*/
+
+/*==============================*/
+/* start says================ */
+/*==============================*/
+.lead {font-size: 24px;font-weight: 300}
+.car-2{margin-top: 30px;color: black;text-align: center}
+.car-a-2{bottom: -135px; }
+#car-o{
+    background-image: url(../img/members/sas-ghost.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+#car-oo{
+    background-image: url(../img/members/sas.png);
+        width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+#car-ooo{
+    background-image: url(../img/members/sas-girl.png);
+        width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+/*==============================*/
+/* end says================ */
+/*==============================*/
+
+/*==============================*/
+/* start price_table=========== */
+/*==============================*/
+
+.price_table {
+    background: url(../img/sections_background/awp_man.jpg) 50% 0 repeat fixed ;
+    background-size: cover;
+    margin-top: 45px;
+    padding-top: 20px;
+}
+.price_table .price_box {
+    background:#343a40b5;
+    padding:10px;
+    border:1px solid #DDD;
+    margin-bottom:15px;
+    color: white;
+    width: inherit;
+}
+.price_table .price_box h2 {margin:5px 0 15px}
+.price_table .price_box p {
+    font-size:35px;
+    font-weight:bold;
+    color:#000;
+    width:100px;
+    height:100px;
+    background:#F3F3F3;
+    border-radius:50%;
+    line-height:100px;
+    border:2px solid #FFF;
+    margin: 0px auto;
+}
+.price_table .price_box ul {line-height:250%;font-size:18px}
+.price_table .price_box a {margin-bottom:5px}
+.price_table .price_box:hover ,.mx:hover {
+    background-color: #343a40;
+    transition: all .4s ease-in-out;
+}
+/*==============================*/
+/* end price_table============= */
+/*==============================*/
+
+/*==============================*/
+/* start stats============= */
+/*==============================*/
+.stats > p {font-size: 36px;}
+.stats > span {font-size: 25px;}
+/*==============================*/
+/* end stats============= */
+/*==============================*/
+
+/*==============================*/
+/* start team============= */
+/*==============================*/
+.team{
+    background: url(../img/sections_background/bf2.jpg) 50% 0 repeat fixed ;
+    padding-top: 20px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+.mx{
+   background-color: #343a40b5;
+    color: white;
+    padding: 19px 5px;
+    margin: 16px 0px; 
+}
+.our_team{
+    margin-top: 140px;
+}
+
+/*==============================*/
+/* end team============= */
+/*==============================*/
+
+/*==============================*/
+/* start contact-us============= */
+/*==============================*/
+
+.contact-us {
+    min-height:300px    
+}
+
+.contact-us .fields {background:#343a40;min-height:300px;color:#fff;padding: 30px 0px;}
+
+.contact-us p {margin-bottom:40px}
+
+.contact-us textarea {height:108px}
+
+.contact-us input[type="text"],
+.contact-us textarea {
+    background: #ffffff;
+    color: #000;
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.input-lg-2{
+    width: 347px;
+    margin-right: 17px;
+    margin-left: 15px;
+}
+.contact-us input[type="text"]::placeholder ,
+.contact-us textarea::placeholder {
+    color: black;
+    text-align: center;
+}
+
+/*==============================*/
+/* end contact-us============= */
+/*==============================*/
+
+/*==============================*/
+/* start footer============= */
+/*==============================*/
+
+.footer {background:#111;color:#fff;padding-top:10px;text-align: center;}
+
+.footer h3 {letter-spacing:1px;margin:30px 0 20px}
+
+.footer a {color:#AAA}
+
+.footer a:hover {color:#FFF}
+
+.footer .three-columns {overflow:hidden}
+
+.footer .three-columns li {width:33.3333%;float:left;padding:5px 0}
+
+.footer .social-list {overflow:hidden;margin:20px 0 10px}
+
+.footer .social-list li {
+    float:left;
+    margin-right:3px;
+    opacity:0.7;
+    filter:alpha(opacity=70);
+}
+
+.footer .social-list li:hover {opacity:1}
+
+.footer .img-thumbnail {
+    background:rgba(0,0,0,0.2);
+    border:1px solid #444;
+    margin-bottom:5px
+}
+
+.footer .copyright {
+    background:#343a40;
+    color:#fff;
+    padding:15px 0;
+    margin-top:30px;
+    font-size:18px
+}
+
+.fix-p {
+    border-bottom: 1px solid;
+    padding: 10px;
+    display:block;
+    cursor: pointer;
+}
+/*==================================*/
+/* end footer====================== */
+/*==================================*/
+
+
+
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Market@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*==================================*/
+/* start questions===--======= */
+/*==================================*/
+.faq-questions{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url(../img/sections_background/abstract.jpg) 50% 0 repeat fixed ;
+    background-size: contain;
+}
+.mb-3{background-color: #343a40c7;color: white;}
+.btn-outline-danger {color: white;border-color: white;}
+.text-muted {color: #0288ff!important;}
+.card-img-top {
+    width: 74%;
+    margin: auto;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+.panel-title {
+    background-color:#343a40c7;
+    padding: 10px 30px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 116px;
+    margin: auto;
+}
+#collapse-one, #collapse-two , #collapse-three , #collapse-four{
+    background: url(../img/sections_background/cod.jpg) 50% 0 repeat fixed ;
+    width: fit-content;
+    padding: 10px 10px;
+    border: 3px solid #000;   
+}
+/*==================================*/
+/* end questions===--======= */
+/*==================================*/
+
+/*==================================*/
+/* start Gaming Reviews===--======= */
+/*==================================*/
+
+#gamereviews {
+  background: url(../img/sections_background/team.png) 50% 0 repeat fixed;
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 4px;
+  padding-bottom: 60px;
+padding-top: 30px;
+}
+.image-preview {position: relative;border-radius: 5px;}
+.text-gray {
+    color: #ffffff !important;
+    background-color: #343a40c7;
+    height: 100%;
+    padding: 14px 50px;
+    border: 3px solid;
+    border-radius: 10px;
+}
+.review-title {
+  font-weight: 600 !important;
+  color: #fff !important;
+  font-size: 17px;
+  margin-bottom: 10px !important;
+}
+.small-3 {font-size: 13px !important;}
+.comment {color: #fff !important;}
+.summary {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.9;
+  margin-top: 5px;
+}
+.bg-dark_A-10 {background-color: rgba(0, 0, 0, 0.5) !important;}
+.sharing {color: #fff !important;}
+.custom-card {background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.custom-card h5 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+.top-rated-active {background-color: rgba(0, 0, 0, 0.5) !important;}
+.top-rated {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0px;
+  border: 0px !important;
+}
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  letter-spacing: 2px !important;
+}
+.list-group-item:hover {border-bottom: 2px solid #13a456;transition: 0.2s;}
+.know-info{font-size: 24px;font-weight: 700;color: darkblue;}
+.ans-info{font-size: 17px;padding-left: 20px;}
+/*==================================*/
+/* end Gaming Reviews===--======= */
+/*==================================*/
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Download@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*==================================*/
+/* start portfolio3===--======= */
+/*==================================*/
+
+
+.portfolio3{
+    padding-top: 100px;padding-bottom:100px;
+    background: url('../img/portfolio/bag%20(1).webp') 50% 0 repeat fixed ;
+    background-size: cover;
+}
+.portfolio3 .portfolio-content{margin: 60px 15px 0px 15px;}
+.portfolio3 .portfolio-content .portfolio-item{padding: 0px 5px;}
+.portfolio3 .portfolio-item figure {background-color: #343a40;	position: relative;}
+.portfolio3 .portfolio-item figure img {
+	width: 100%;
+	max-width: 100%;
+	display:inline-block;
+	position: relative;
+}
+.portfolio3 .portfolio-item figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 52px;
+}
+.portfolio3 .portfolio-content figure img {z-index: 2;transition: transform 0.4s;}
+.portfolio3 .portfolio-content figure:hover img {transform: translateY(-80px);}
+.portfolio3 .portfolio-content figcaption {
+	height: 100px;
+	width: 100%;
+	top: auto;
+	bottom: 0;
+}
+.portfolio3 .portfolio-content figcaption  a i{color: #fff;}
+.portfolio3 .portfolio-content .fa{width: 14px;text-align: center;}
+.portfolio3 .portfolio-content .portfolio-item figcaption .portfolio-icon {
+	padding: 14px 16px;
+	margin-left: 2px;
+	margin-right: 2px;
+	border-radius: 3px;
+    background-color: #000;
+}
+/*==================================*/
+/* end portfolio3===--======= */
+/*==================================*/
+
+
+
+
+.wellcome-dow{
+    background-color:#343a40;
+    color: white;
+    border-top: 10px solid #000;
+    border-bottom: 10px solid #000;
+}
+.wellcome-dow-read{
+    margin: auto;
+    padding: 20px;
+}
+
+/*==================================*/
+/* start join in===--======= */
+/*==================================*/
+
+#join{
+    padding: 100px 150px 20px 150px;
+    background: url('../img/sections_background/maps.jpg') 50% 0 repeat fixed ;
+    background-size: cover;
+}
+
+#join .input-group-text {
+    display: flex;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f2f8ff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #000000;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+#join .form-control , #join .custom-select , #join .custom-file-label {
+    display: block;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #fff0;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#join .form-control::placeholder , #join .custom-select::placeholder , #join .custom-file-label::placeholder{
+    color: white;
+}
+#join .custom-select , #join .custom-file-label{
+    color: black;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background-color: #343a40;
+    color: white;
+}
